@@ -15,70 +15,80 @@ class HomeView extends StatelessWidget {
       "phone": "1-565-827-8982",
       "email": "nonummy.ac@outlook.couk",
       "country": "Pakistan",
-      "region": "Pays de la Loire"
+      "region": "Pays de la Loire",
+      "picture":"assets/person_1.png"
     },
     {
       "name": "Macy Mcdowell",
       "phone": "434-5712",
       "email": "tempor.diam@aol.edu",
       "country": "Brazil",
-      "region": "Huáběi"
+      "region": "Huáběi",
+      "picture":"assets/person_2.png"
     },
     {
       "name": "Carissa Savage",
       "phone": "1-567-743-4341",
       "email": "vel@google.com",
       "country": "India",
-      "region": "Loreto"
+      "region": "Loreto",
+      "picture":"assets/person_3.png"
     },
     {
       "name": "Bruce Cannon",
       "phone": "582-3896",
       "email": "eros.proin.ultrices@hotmail.com",
       "country": "New Zealand",
-      "region": "South Island"
+      "region": "South Island",
+       "picture":"assets/person_4.png"
     },
     {
       "name": "Brian Ramos",
       "phone": "674-3271",
       "email": "at.egestas@aol.couk",
       "country": "South Korea",
-      "region": "Azad Kashmir"
+      "region": "Azad Kashmir",
+       "picture":"assets/person_5.png"
     },
     {
       "name": "Carlos Harper",
       "phone": "1-238-113-6033",
       "email": "proin.nisl@icloud.org",
       "country": "Russian Federation",
-      "region": "Guanacaste"
+      "region": "Guanacaste",
+       "picture":"assets/person_6.png"
     },
     {
       "name": "Britanney Dorsey",
       "phone": "871-3241",
       "email": "non@yahoo.couk",
       "country": "Indonesia",
-      "region": "Jharkhand"
+      "region": "Jharkhand",
+       "picture":"assets/person_7.png"
     },
     {
       "name": "William Ortiz",
       "phone": "1-412-819-7163",
       "email": "molestie.in@yahoo.ca",
       "country": "Vietnam",
-      "region": "North Island"
+      "region": "North Island",
+       "picture":"assets/person_5.png"
     },
     {
       "name": "Shellie Merrill",
       "phone": "1-241-690-5206",
       "email": "non@google.couk",
       "country": "Turkey",
-      "region": "Gorontalo"
+      "region": "Gorontalo",
+       "picture":"assets/person_3.png"
     },
     {
       "name": "Clinton Mosley",
       "phone": "1-768-578-0868",
       "email": "sagittis.augue@google.edu",
       "country": "Chile",
-      "region": "South Chungcheong"
+      "region": "South Chungcheong",
+       "picture":"assets/person_6.png"
     }
   ];
 
@@ -145,7 +155,8 @@ class HomeView extends StatelessWidget {
                                 email: 'bright@ghanatechlab.com',
                                 name: 'Etornam Bright',
                                 phone: '+233 24 54 36 757',
-                                region: 'Greater Accra'));
+                                region: 'Greater Accra',
+                                picture: 'https://dfsddffds.png'));
                       }));
                     },
                     leading: const CircleAvatar(
@@ -205,9 +216,9 @@ class HomeView extends StatelessWidget {
                           );
                         }));
                       },
-                      leading: const CircleAvatar(
+                      leading: CircleAvatar(
                         radius: 25,
-                        backgroundImage: AssetImage('assets/person_1.png'),
+                        backgroundImage: AssetImage('${element['picture']}'),
                       ),
                       title: Text(
                         '${element['name']}',
